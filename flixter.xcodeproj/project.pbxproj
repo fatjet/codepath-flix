@@ -16,6 +16,9 @@
 		AB5224D727B82B3300E13BC6 /* flixterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5224D627B82B3300E13BC6 /* flixterTests.swift */; };
 		AB5224E127B82B3300E13BC6 /* flixterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5224E027B82B3300E13BC6 /* flixterUITests.swift */; };
 		AB5224E327B82B3300E13BC6 /* flixterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5224E227B82B3300E13BC6 /* flixterUITestsLaunchTests.swift */; };
+		AB5224F127B82E5E00E13BC6 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = AB5224F027B82E5E00E13BC6 /* AlamofireImage */; };
+		AB96B25527B83B3F0075ED79 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96B25427B83B3F0075ED79 /* MovieViewController.swift */; };
+		ABE70E6D27B85EA8000007CC /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE70E6C27B85EA8000007CC /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		AB5224DC27B82B3300E13BC6 /* flixterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flixterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5224E027B82B3300E13BC6 /* flixterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flixterUITests.swift; sourceTree = "<group>"; };
 		AB5224E227B82B3300E13BC6 /* flixterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flixterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB96B25427B83B3F0075ED79 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		ABE70E6C27B85EA8000007CC /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5224F127B82E5E00E13BC6 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,9 +109,11 @@
 				AB5224C127B82B0100E13BC6 /* SceneDelegate.swift */,
 				AB5224C327B82B0100E13BC6 /* ViewController.swift */,
 				AB5224C527B82B0100E13BC6 /* Main.storyboard */,
+				ABE70E6C27B85EA8000007CC /* MovieCell.swift */,
 				AB5224C827B82B3000E13BC6 /* Assets.xcassets */,
 				AB5224CA27B82B3000E13BC6 /* LaunchScreen.storyboard */,
 				AB5224CD27B82B3000E13BC6 /* Info.plist */,
+				AB96B25427B83B3F0075ED79 /* MovieViewController.swift */,
 			);
 			path = flixter;
 			sourceTree = "<group>";
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = flixter;
+			packageProductDependencies = (
+				AB5224F027B82E5E00E13BC6 /* AlamofireImage */,
+			);
 			productName = flixter;
 			productReference = AB5224BC27B82B0100E13BC6 /* flixter.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = AB5224B327B82AFD00E13BC6;
+			packageReferences = (
+				AB5224EF27B82E5E00E13BC6 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = AB5224BD27B82B0100E13BC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +275,8 @@
 				AB5224C427B82B0100E13BC6 /* ViewController.swift in Sources */,
 				AB5224C027B82B0100E13BC6 /* AppDelegate.swift in Sources */,
 				AB5224C227B82B0100E13BC6 /* SceneDelegate.swift in Sources */,
+				ABE70E6D27B85EA8000007CC /* MovieCell.swift in Sources */,
+				AB96B25527B83B3F0075ED79 /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +458,7 @@
 				DEVELOPMENT_TEAM = 8TD6FLDMC6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = flixter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = flixter;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,6 +488,7 @@
 				DEVELOPMENT_TEAM = 8TD6FLDMC6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = flixter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = flixter;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -606,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB5224EF27B82E5E00E13BC6 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB5224F027B82E5E00E13BC6 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB5224EF27B82E5E00E13BC6 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB5224B427B82AFE00E13BC6 /* Project object */;
 }

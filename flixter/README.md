@@ -1,5 +1,5 @@
 ## Flix Part 2 <3
-
+***Flix** is a table view app that displays the latest movies with an implemented "Superhero" tab for superhero movies.
 ### User Stories
 #### REQUIRED (10pts)
 - [X] (5pts) User can tap a cell to see more details about a particular movie.
